@@ -10,17 +10,17 @@ repos:
       - id: flake8
         args: ["--max-line-length=88"]
 
-  - repo: https://github.com/myint/autoflake
-    rev: v1.5
-    hooks:
-      - id: autoflake
-        args: [
-          "--remove-all-unused-imports",
-          "--remove-unused-variables",
-          "--in-place",
-          "--recursive",
-          "src"
-        ]
+  # - repo: https://github.com/myint/autoflake
+  #   rev: v1.5
+  #   hooks:
+  #     - id: autoflake
+  #       args: [
+  #         "--remove-all-unused-imports",
+  #         "--remove-unused-variables",
+  #         "--in-place",
+  #         "--recursive",
+  #         "src"
+  #       ]
 
   - repo: https://github.com/pre-commit/mirrors-isort
     rev: v5.12.0
